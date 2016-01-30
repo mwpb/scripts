@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 tmux new-session -d 'python ~/scripts/ranger/ranger.py'
-tmux split-window -h 'vim'
+tmux split-window -h 'python ~/scripts/ranger/ranger.py'
 tmux new-window 'calcurse'
 tmux split-window -h 'mutt'
 
