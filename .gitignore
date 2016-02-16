@@ -1,4 +1,4 @@
 backup_files.sh
 .DS_Store
 /bin/bin
-*.pyc
+**/*.pyc
