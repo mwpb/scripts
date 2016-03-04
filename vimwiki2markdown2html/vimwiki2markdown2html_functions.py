@@ -35,6 +35,11 @@ def vimwiki_folder2markdown(dirname):
             print filename
             vimwiki2markdown(dirname,filename)
 
+html_head = '''
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+'''
 def markdown_folder2html(dirname):
     target_dir = dirname+"html/"
     try:
@@ -54,6 +59,7 @@ def markdown_folder2html(dirname):
             f_out = codecs.open(dirname+'html/'+filename+'.html','w',encoding="utf-8",errors="xmlcharrefreplace")
             output = markdown.markdown(md)
             print output
+            f_out.write(html_head)
             f_out.write(output)
             input_file.close()
             f_out.close()
