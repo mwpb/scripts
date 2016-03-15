@@ -1,5 +1,5 @@
 import os
-from vimwiki2markdown2html import vimwiki_folderj
+from vimwiki2markdown2html import vimwiki_folder
 
 from sys import argv
 
