@@ -11,8 +11,8 @@ def vimwiki2markdown(dirname,filename):
     text = f.read()
     f_out = open(dirname+"/markdown/"+filename,"a+")
     
-    changed_text = re.sub('\[\[(.+?)\]\]',r'[\1](\1)',text)
-    #changed_text = re.sub('\[(.+?)\]\((.+?)\)',r'[\1](\2.md)',text)
+    #changed_text = re.sub('\[\[(.+?)\]\]',r'[\1](\1)',text)
+    changed_text = re.sub('\[(.+?)\]\((.+?)\)',r'[[\1]]',text)
     print changed_text
     f_out.write(changed_text)
     
