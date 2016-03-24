@@ -15,7 +15,7 @@ def vimwiki_folder2markdown(dirname):
     for filename in os.listdir(dirname):
         print filename
         ext = os.path.splitext(filename)[1]
-        if ext == ".md":
+        if ext == ".txt":
             print filename
             vimwiki2markdown(dirname,filename)
 
