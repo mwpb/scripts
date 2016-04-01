@@ -10,7 +10,7 @@ def extract_tags(dir_path):
             try: 
                 file_object = open(dir_path+file_name)
                 for line in file_object:
-                    tag = re.search('(.*)@(.+)@',line)
+                    tag = re.search('\s*(.*)@(.+)@',line)
                     if tag:
                         new_tag = [tag.group(1)]
                         if tag.group(2) in tag_dict:
