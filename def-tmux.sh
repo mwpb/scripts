@@ -10,8 +10,4 @@ tmux -2 attach-session -d
 mr status
 
 killall tmux
-<<<<<<< HEAD
-# very stange onw
-=======
-# very old
->>>>>>> origin/master
+# v old
