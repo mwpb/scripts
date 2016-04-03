@@ -10,4 +10,4 @@ tmux -2 attach-session -d
 mr status
 
 killall tmux
-# the remote adds a comment
+# the local adds a comment
