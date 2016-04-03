@@ -10,3 +10,4 @@ tmux -2 attach-session -d
 mr status
 
 killall tmux
+# a test comment
